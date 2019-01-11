@@ -2,6 +2,8 @@ var browserify = require('browserify');
 var fs = require('fs');
 var common_paths = require('../hslayers-ng/common_paths');
 common_paths.paths.push(__dirname);
+common_paths.paths.push(__dirname + '/node_modules/cesium/Build/Cesium');
+
 var b = browserify({
     paths: common_paths.paths
 });
