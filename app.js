@@ -223,10 +223,9 @@ define(['ol', 'toolbar', 'layermanager', 'poi', 'sidebar', 'query', 'search', 'p
             'compositions_catalogue_url': "/php/metadata/csw",
             status_manager_url: '/wwwlibs/statusmanager2/index.php',
             default_view: new ol.View({
-                center: ol.proj.transform([1208534.8815206578, 5761821.705531779], 'EPSG:3857', 'EPSG:4326'),
+                center: [1208534.8815206578, 5761821.705531779],
                 zoom: 16,
-                units: "m",
-                projection: 'EPSG:4326'
+                units: "m"
             })
         });
 
