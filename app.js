@@ -99,6 +99,7 @@ define(['ol', 'toolbar', 'layermanager', 'poi', 'sidebar', 'query', 'search', 'p
         };
 
         module.value('config', {
+            cesiumBase: 'node_modules/cesium/Build/Cesium/',
             cesiumAccessToken: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIzZDk3ZmM0Mi01ZGFjLTRmYjQtYmFkNC02NTUwOTFhZjNlZjMiLCJpZCI6MTE2MSwiaWF0IjoxNTI3MTYxOTc5fQ.tOVBzBJjR3mwO3osvDVB_RwxyLX7W-emymTOkfz6yGA',
             terrain_providers: [{
                 title: 'Local terrain',
