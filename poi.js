@@ -84,7 +84,6 @@ define(['ol'],
                 WHERE {?poi geo:asWKT ?wkt . 
                     FILTER(bif:st_intersects(bif:st_geomfromtext("${extents}"), ?wkt)).
                     ?poi <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> ?sub. 
-                    ?sub <http://www.w3.org/2000/01/rdf-schema#subClassOf> ?categ.
                     ?poi <http://www.w3.org/2000/01/rdf-schema#label> ?label
                 }`) + '&should-sponge=&format=application%2Fsparql-results%2Bjson&timeout=0&debug=on';
 
